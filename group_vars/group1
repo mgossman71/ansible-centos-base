@@ -1,13 +1,1 @@
----
-[k8s-masters-and-workers]
-master-servers
-worker-servers
 
-[master-servers]
-k0 ansible_host=k0.gozz.domain ansible_port=22 ansible_user=root
-
-[worker-servers]
-k1 ansible_host=k1.gozz.domain ansible_port=22 ansible_user=root
-k2 ansible_host=k2.gozz.domain ansible_port=22 ansible_user=root
-k3 ansible_host=k3.gozz.domain ansible_port=22 ansible_user=root
-k4 ansible_host=k4.gozz.domain ansible_port=22 ansible_user=root
