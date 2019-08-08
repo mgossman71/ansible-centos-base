@@ -3,7 +3,7 @@
 - name: main
   hosts: "*"
   tasks:
-    - name: install the latest version of Apache
+    - name: install base software
       yum:
         name: "{{ packages }}"
         state: latest
