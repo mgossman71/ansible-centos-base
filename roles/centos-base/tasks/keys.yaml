@@ -1,15 +1,12 @@
 ---
-# - name: Creates directory
-#   file:
-#     path: /src/www
-#     state: directory
-
+- name: Creates /root/.ssh
+  file:
+    path: /root/.ssh
+    state: directory
 - name: place authorized_keys.
   copy:
     src: files/authorized_keys
-    dest: /root/.ssh
+    dest: /root/.ssh/authorized_keys
     owner: root
     group: root
     mode: '0600'
-    recurse:  yes
-    state: directory
