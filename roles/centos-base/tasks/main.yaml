@@ -2,3 +2,4 @@
 - import_tasks: software.yaml
 - import_tasks: keys.yaml
 - import_tasks: sshd-interactive-login-unlock.yaml
+- import_tasks: disable-host-key-checking.yaml
