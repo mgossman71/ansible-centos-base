@@ -1,0 +1,6 @@
+---
+- name: k8s Master Setup
+  hosts: all
+  gather_facts: yes
+  roles:
+    - k8s-master

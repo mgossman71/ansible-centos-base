@@ -1,0 +1,9 @@
+---
+- name: install needed Operating System packages
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - yum-utils
+    - device-mapper-persistent-data
+    - lvm2

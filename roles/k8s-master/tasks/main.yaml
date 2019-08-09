@@ -1,0 +1,4 @@
+- import_tasks: disable-swap.yaml
+- import_tasks: install-packages.yaml
+- import_tasks: install-docker-ce.yaml
+- import_tasks: install-k8s.yaml
