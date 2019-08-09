@@ -1,5 +1,5 @@
 ---
-- name: place authorized_keys.
+- name: place conf in .ssh 
   copy:
     src: files/ssh_config
     dest: /root/.ssh/config
