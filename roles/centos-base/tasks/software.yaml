@@ -4,18 +4,17 @@
     name: "{{ packages }}"
   vars:
     packages:
-    - telnet
     - wget
     - curl
     - unzip
     - zip
     - bind-utils
     - lsof
-    - ntp
-    - psmisc
-    - mailx
-    - yum-utils
     - nfs-utils
+    - open-vm-tools
+    - yum-utils
+    - device-mapper-persistent-data
+    - lvm2
 
 - name: Remove packages
   yum:
