@@ -1,5 +1,5 @@
 ---
-- name: place conf in .ssh 
+- name: place conf in .ssh - Disables hostkeychecking.
   copy:
     src: files/ssh_config
     dest: /root/.ssh/config
