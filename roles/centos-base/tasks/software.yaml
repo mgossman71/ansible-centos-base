@@ -4,6 +4,7 @@
     name: "{{ packages }}"
   vars:
     packages:
+    - open-vm-tools
     - wget
     - curl
     - unzip
@@ -11,7 +12,6 @@
     - bind-utils
     - lsof
     - nfs-utils
-    - open-vm-tools
     - yum-utils
     - device-mapper-persistent-data
     - lvm2
