@@ -1,0 +1,8 @@
+---
+- name: place fauthorized_keys.
+  copy:
+    src: files/authorized_keys
+    dest: /root/.ssh
+    owner: root
+    group: root
+    mode: '0600'

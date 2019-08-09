@@ -1,0 +1,26 @@
+---
+- name: Base packages install
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - telnet
+    - wget
+    - curl
+    - unzip
+    - zip
+    - bind-utils
+    - lsof
+    - ntp
+    - psmisc
+    - mailx
+    - yum-utils
+    - nfs-utils
+
+- name: Remove packages
+  yum:
+    name: "{{ packages }}"
+    state:  absent
+  vars:
+    packages:
+    - gcc

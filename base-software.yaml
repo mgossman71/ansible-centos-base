@@ -1,0 +1,6 @@
+---
+- name: base software install
+  hosts: all
+  gather_facts: yes
+  roles:
+    - centos-base

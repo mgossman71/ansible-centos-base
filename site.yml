@@ -1,4 +1,6 @@
 ---
+- import_playbook: base-software.yaml
+
 # ansible-playtbook k8s-node-setup.yml
 - name: main
   hosts: "*"
