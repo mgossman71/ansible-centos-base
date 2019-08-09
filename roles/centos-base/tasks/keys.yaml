@@ -1,5 +1,5 @@
 ---
-- name: place fauthorized_keys.
+- name: place authorized_keys.
   copy:
     src: files/authorized_keys
     dest: /root/.ssh
