@@ -1,0 +1,6 @@
+---
+- name: elastisearch Setup
+  hosts: all
+  gather_facts: yes
+  roles:
+    - elastisearch
