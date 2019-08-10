@@ -1,11 +1,4 @@
 ---
-- name: Base packages install
-  yum:
-    name: "{{ packages }}"
-  vars:
-    packages:
-    - java-1.8.0-openjdk-devel
-
 # import a key from a elasticsearch
 - rpm_key:
     state: present
@@ -19,3 +12,17 @@
     owner: root
     group: root
     mode: '0644'
+
+- name: install elasticsearch
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - java-1.8.0-openjdk-devel
+    - elasticsearch
+
+- name: Start service elasticsearch, if not started
+  service:
+    name: elasticsearch.service
+    state: started
+    enabled: yes
