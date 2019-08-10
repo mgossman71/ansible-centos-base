@@ -25,11 +25,11 @@
 - name: allow UsePAM
   lineinfile:
     path:  /etc/elasticsearch/elasticsearch.yml
-    regexp: '^network.host:'
+    regexp: '^#network.host:'
     line: 'network.host: 0.0.0.0'
 
 - name: Start service elasticsearch, if not started
   service:
     name: elasticsearch.service
-    state: started
+    state: restart
     enabled: yes
