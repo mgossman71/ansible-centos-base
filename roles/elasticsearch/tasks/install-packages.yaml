@@ -31,5 +31,10 @@
 - name: Start service elasticsearch, if not started
   service:
     name: elasticsearch.service
-    state: restart
+    state: stopped
+
+- name: Start service elasticsearch, if not started
+  service:
+    name: elasticsearch.service
+    state: started
     enabled: yes
