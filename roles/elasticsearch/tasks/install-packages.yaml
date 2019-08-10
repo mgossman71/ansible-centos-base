@@ -12,7 +12,6 @@
     key: https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 # Place repo file.
----
 - name: place elasticsearch repo file
   copy:
     src: files/elasticsearch.repo
