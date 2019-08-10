@@ -9,5 +9,7 @@
     path: /etc/selinux/config
     regexp: '^SELINUX='
     line: SELINUX=disabled
+    ignore_errors: yes
+    
 - name: Disable selinux on systems.
   command: setenforce 0

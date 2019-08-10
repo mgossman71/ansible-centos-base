@@ -6,6 +6,7 @@
 
 - name: Disable selinux on systems.
   command: setenforce 0
+  ignore_errors: yes
 
 - name: Start service elasticsearch, if not started
   service:
