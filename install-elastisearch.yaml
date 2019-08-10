@@ -1,6 +1,6 @@
 ---
 - name: elastisearch Setup
-  hosts: all
+  hosts: data0
   gather_facts: yes
   roles:
     - elasticsearch
