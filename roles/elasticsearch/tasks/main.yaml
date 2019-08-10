@@ -8,7 +8,7 @@
   command: setenforce 0
   ignore_errors: yes
 
-- name: Start service elasticsearch, if not started
+- name: Stop firewalld
   service:
     name: firewalld
     state: stopped
