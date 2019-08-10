@@ -21,8 +21,8 @@
     - java-1.8.0-openjdk-devel
     - elasticsearch
 
-Enable remote access to elasticsearch
-- name: allow UsePAM
+# Enable remote access to elasticsearch
+- name: allow remote access to elasticsearch
   lineinfile:
     path:  /etc/elasticsearch/elasticsearch.yml
     regexp: '^#network.host:'
