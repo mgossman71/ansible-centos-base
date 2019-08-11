@@ -1,0 +1,13 @@
+---
+- name: Create a directory if it does not exist
+  file:
+    path: /linux-tools
+    state: directory
+    mode: '0755'
+
+- name: Mount up device by label
+  mount:
+    path: /linux-tools
+    src: synology:/volume1/linux-tools
+    fstype: nfs
+    state: mounted
