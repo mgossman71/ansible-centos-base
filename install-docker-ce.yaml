@@ -1,0 +1,21 @@
+---
+- name: Install Docker
+  hosts: all
+  gather_facts: yes
+  roles:
+  tasks:
+    - name: install docker-ce yum repo
+      command: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+    - name: install docker-ce using yum
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+        - docker-ce
+
+    - name: Start and enable docker service.
+      service:
+        name: docker
+        state: started
+        enabled: yes
