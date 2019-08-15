@@ -1,4 +1,11 @@
 ---
+- name: net-tools install
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - net-tools
+
 - name: Start service consul, if not started
   service:
     name: consul.service
