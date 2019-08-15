@@ -1,0 +1,9 @@
+---
+- name: Update Consul Services
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Run tasks/consul-service-update.yaml instead of 'main'
+      include_role:
+        name: consul
+        tasks_from: consul-service-update.yaml

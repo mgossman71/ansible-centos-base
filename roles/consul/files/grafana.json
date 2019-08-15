@@ -1,0 +1,11 @@
+{
+  "service":  {
+    "name": "grafana",
+    "address":  "127.0.0.1",
+    "port": 32588,
+    "check":  {
+      "http": "http://127.0.0.1:32588",
+      "interval": "10s"
+    }
+  }
+}

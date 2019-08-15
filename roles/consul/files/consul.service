@@ -1,0 +1,14 @@
+[Unit]
+Description=Consul Service
+After=network.target
+
+[Service]
+Type=simple
+restart=always
+restartSec=1
+User=root
+ExecStart=/usr/local/bin/consul-start.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

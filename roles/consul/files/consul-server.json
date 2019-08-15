@@ -1,0 +1,9 @@
+{
+	"datacenter":	"ost",
+	"data_dir":	"/consul",
+	"ui":	true,
+	"retry_join":	["10.61.189.7"],
+	"disable_remote_exec":	false,
+	"server":	true
+}
+]

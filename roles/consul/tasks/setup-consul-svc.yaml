@@ -1,0 +1,22 @@
+---
+- name: place consul service startup script.
+  copy:
+    src: files/consul-start.sh
+    dest: /usr/local/bin/consul-start.sh
+    owner: root
+    group: root
+    mode: '0744'
+
+- name: place consul svc script.
+  copy:
+    src: files/consul.service
+    dest: /etc/systemd/system/consul.service
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Start service consul, if not started
+  service:
+    name: consul.service
+    state: started
+    enabled: yes

@@ -1,0 +1,6 @@
+---
+- name: Start service consul, if not started
+  service:
+    name: consul.service
+    state: started
+    enabled: yes

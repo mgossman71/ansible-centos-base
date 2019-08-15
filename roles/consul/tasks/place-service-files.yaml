@@ -1,0 +1,15 @@
+---
+- name: place consul configuration file.
+  copy:
+    src: files/postgres.json
+    dest: /usr/local/etc/postgres.json
+    owner: root
+    group: root
+    mode: '0644'
+- name: place consul configuration file.
+  copy:
+    src: files/grafana.json
+    dest: /usr/local/etc/grafana.json
+    owner: root
+    group: root
+    mode: '0644'

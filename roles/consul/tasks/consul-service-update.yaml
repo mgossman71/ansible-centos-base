@@ -1,0 +1,8 @@
+---
+- import_tasks: place-service-files.yaml
+
+- name: Restart service consul
+  service:
+    name: consul.service
+    state: restarted
+    enabled: yes

@@ -1,0 +1,7 @@
+{
+  "service":  {
+    "name": "Postgresql",
+    "address":  "10.61.189.7",
+    "port": 32590
+  }
+}
