@@ -1,7 +1,7 @@
 {
   "service":  {
     "name": "sonarr",
-    "address":  "kvip.gozz.domain:32402",
+    "address":  "kvip.gozz.domain",
     "port": 32402,
     "check":  {
       "http": "http://127.0.0.1:32402",

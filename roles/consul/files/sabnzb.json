@@ -1,7 +1,7 @@
 {
   "service":  {
     "name": "sabnzb",
-    "address":  "kvip.gozz.domain:32401",
+    "address":  "kvip.gozz.domain",
     "port": 32401,
     "check":  {
       "http": "http://127.0.0.1:32401",
