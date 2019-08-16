@@ -1,5 +1,5 @@
 ---
-- name: place consul service startup script.
+- name: place consul backup script.
   copy:
     src: files/consul-config-backup.sh
     dest: /usr/bin/consul-config-backup.sh
