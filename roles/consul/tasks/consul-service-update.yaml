@@ -1,6 +1,14 @@
 ---
 - import_tasks: place-service-files.yaml
 
+- name: place consul service startup script.
+  copy:
+    src: files/consul-start.sh
+    dest: /usr/local/bin/consul-start.sh
+    owner: root
+    group: root
+    mode: '0744'
+    
 - name: Restart service consul
   service:
     name: consul.service
