@@ -1,0 +1,11 @@
+{
+  "service":  {
+    "name": "sabnzb",
+    "address":  "127.0.0.1",
+    "port": 32401,
+    "check":  {
+      "http": "http://127.0.0.1:32401",
+      "interval": "10s"
+    }
+  }
+}

@@ -4,4 +4,7 @@
 -client=0.0.0.0 \
 -config-file /usr/local/etc/consul.json \
 -config-file /usr/local/etc/postgres.json \
+-config-file /usr/local/etc/couchpotato.json \
+-config-file /usr/local/etc/sabnzb.json \
+-config-file /usr/local/etc/sonarr.json \
 -config-file /usr/local/etc/grafana.json

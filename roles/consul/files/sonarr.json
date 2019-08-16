@@ -1,0 +1,11 @@
+{
+  "service":  {
+    "name": "sonarr",
+    "address":  "127.0.0.1",
+    "port": 32402,
+    "check":  {
+      "http": "http://127.0.0.1:32402",
+      "interval": "10s"
+    }
+  }
+}
