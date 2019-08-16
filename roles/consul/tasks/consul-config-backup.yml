@@ -1,0 +1,11 @@
+---
+- name: place consul service startup script.
+  copy:
+    src: files/consul-config-backup.sh
+    dest: /usr/bin/consul-config-backup.sh
+    owner: root
+    group: root
+    mode: '0755'
+
+- name: return motd to registered var
+  command: /usr/bin/consul-config-backup.sh

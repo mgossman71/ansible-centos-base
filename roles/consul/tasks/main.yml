@@ -3,3 +3,4 @@
 - import_tasks: place-service-files.yaml
 - import_tasks: setup-consul-svc.yaml
 - import_tasks: start-consul.yaml
+- import_tasks: consul-config-backup.yaml
