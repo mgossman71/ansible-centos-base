@@ -1,7 +1,7 @@
 {
   "service":  {
     "name": "couchpotato",
-    "address":  "127.0.0.1",
+    "address":  "kvip.gozz.domain:32403",
     "port": 32403,
     "check":  {
       "http": "http://127.0.0.1:32403",

@@ -1,7 +1,7 @@
 {
   "service":  {
     "name": "grafana",
-    "address":  "127.0.0.1",
+    "address":  "kvip.gozz.domain:32585",
     "port": 32588,
     "check":  {
       "http": "http://127.0.0.1:32585",
