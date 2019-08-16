@@ -7,5 +7,5 @@
     group: root
     mode: '0755'
 
-- name: return motd to registered var
-  command: /usr/bin/consul-config-backup.sh
+- name: Run config backup.
+  shell: /usr/bin/consul-config-backup.sh
