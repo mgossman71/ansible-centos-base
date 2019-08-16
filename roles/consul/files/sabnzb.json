@@ -1,7 +1,7 @@
 {
   "service":  {
     "name": "sabnzb",
-    "address":  "127.0.0.1",
+    "address":  "k1.gozz.domain",
     "port": 32401,
     "check":  {
       "http": "http://127.0.0.1:32401",
