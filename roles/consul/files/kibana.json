@@ -1,0 +1,11 @@
+{
+  "service":  {
+    "name": "grafana",
+    "address":  "kvip.gozz.domain",
+    "port": 30041,
+    "check":  {
+      "http": "http://127.0.0.1:30041",
+      "interval": "10s"
+    }
+  }
+}

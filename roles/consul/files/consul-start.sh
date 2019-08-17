@@ -7,4 +7,5 @@
 -config-file /usr/local/etc/couchpotato.json \
 -config-file /usr/local/etc/sabnzb.json \
 -config-file /usr/local/etc/sonarr.json \
+-config-file /usr/local/etc/kibana.json \
 -config-file /usr/local/etc/grafana.json
