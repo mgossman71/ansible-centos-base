@@ -1,5 +1,6 @@
 ---
 - import_tasks: download-install-consul.yaml
+- import_tasks: download-install-consul-template.yaml
 - import_tasks: place-service-files.yaml
 - import_tasks: setup-consul-svc.yaml
 - import_tasks: start-consul.yaml
