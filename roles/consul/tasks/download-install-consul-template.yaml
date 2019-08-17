@@ -1,5 +1,5 @@
 ---
-- name: Download consul
+- name: Download consul-template
   get_url:
     url: https://releases.hashicorp.com/consul-template/0.21.0/consul-template_0.21.0_darwin_386.zip
     dest: /tmp/consul-template.zip
