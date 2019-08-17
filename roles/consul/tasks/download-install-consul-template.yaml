@@ -1,0 +1,12 @@
+---
+- name: Download consul
+  get_url:
+    url: https://releases.hashicorp.com/consul-template/0.21.0/consul-template_0.21.0_darwin_386.zip
+    dest: /tmp/consul-template.zip
+    mode: '0440'
+
+- name: Extract consul-template.zip into /usr/local/bin
+  unarchive:
+    src: /tmp/consul-template.zip
+    dest: /usr/local/bin
+    remote_src: yes
