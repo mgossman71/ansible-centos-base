@@ -38,3 +38,11 @@
     owner: root
     group: root
     mode: '0644'
+
+- name: place kibana configuration file.
+  copy:
+    src: files/kibana.json
+    dest: /usr/local/etc/kibana.json
+    owner: root
+    group: root
+    mode: '0644'
