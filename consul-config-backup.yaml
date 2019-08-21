@@ -1,0 +1,9 @@
+---
+- name: consul-config-backup run
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Run tasks/consul-config-backup.yaml instead of 'main'
+      include_role:
+        name: consul
+        tasks_from: consul-config-backup.yaml
