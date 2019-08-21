@@ -15,4 +15,4 @@ for i in $(ls|grep start)
 done
 
 cd /etc/selinux/
-consul kv put $(hostname)$(pwd)/config \@$config
+consul kv put $(hostname)$(pwd)/config \@config
