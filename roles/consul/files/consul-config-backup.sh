@@ -13,3 +13,6 @@ cd /usr/local/bin/
 for i in $(ls|grep start)
   do consul kv put $(hostname)$(pwd)/$i \@$i
 done
+
+cd /etc/selinux/
+consul kv put $(hostname)$(pwd)/config \@$config
