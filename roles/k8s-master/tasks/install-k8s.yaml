@@ -30,18 +30,18 @@
     owner: root
     group: root
     mode: 0644
----
+
 - name: Enable services kubelet, if not enabled
   service:
     name: kubelet
     state: started
     enabled: yes
----
+
 - name: Disable/stop firewalld services kubelet, if not enabled
   service:
     name: firewalld
     state: stopped
     enabled: no
----
+
 - name: Disable swap on nodes.
   command: swapoff -a
