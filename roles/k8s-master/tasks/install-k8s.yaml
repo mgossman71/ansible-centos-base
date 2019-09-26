@@ -6,13 +6,13 @@
     owner: root
     group: root
     mode: 0774
----
+
 - name: Run install_k8s_tools.sh script
   command: /tmp/install_k8s_tools.sh
----
+
 - name: Enable kubernetes yum repo
   command: yum-config-manager --enable kubernetes
----
+
 - name: install kubelet kubeadm kubectl
   yum:
     name: "{{ packages }}"
@@ -22,7 +22,7 @@
     - kubelet
     - kubeadm
     - kubectl
----
+
 - name: copy sysctl.conf updated file to node
   copy:
     src: files/sysctl.conf
