@@ -19,9 +19,9 @@
     state: latest
   vars:
     packages:
-    - kubelet
-    - kubeadm
-    - kubectl
+    - kubelet-1.15.4-0
+    - kubeadm-1.15.4-0
+    - kubectl-1.15.4-0
 
 - name: copy sysctl.conf updated file to node
   copy:
