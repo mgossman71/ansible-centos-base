@@ -7,7 +7,7 @@
     name: "{{ packages }}"
   vars:
     packages:
-    - docker-ce.x86_64 3:19.03.2-3.el7
+    - docker-ce-3:18.09.9-3.el7
     - docker-ce-cli
     - containerd.io
 
