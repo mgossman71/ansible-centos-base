@@ -1,0 +1,13 @@
+---
+- name: Create /linux-tools
+  file:
+    path: /linux-tools
+    state: directory
+
+- name: Mount up device by UUID
+  mount:
+    path: /linux-tools
+    src: synology:/volume1/linux-tools
+    fstype: nfs
+    state: present
+    fstab: /etc/fstab
