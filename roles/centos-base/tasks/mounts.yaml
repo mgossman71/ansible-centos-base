@@ -4,10 +4,8 @@
     path: /linux-tools
     state: directory
 
-- name: Mount up device by UUID
-  mount:
-    path: /linux-tools
-    src: synology:/volume1/linux-tools
-    fstype: nfs
-    state: present
-    fstab: /etc/fstab
+- name: Ensure SELinux is set to enforcing mode
+  lineinfile:
+    path: /etc/fstab
+    regexp: 'synology:/volume1/linux-tools'
+    line: synology:/volume1/linux-tools /linux-tools nfs rw 0 2
