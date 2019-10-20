@@ -4,8 +4,44 @@
     path: /linux-tools
     state: directory
 
-- name: Add /linux-tools
+- name: Add /linux-tools Mount
   lineinfile:
     path: /etc/fstab
-    regexp: 'synology:/volume1/linux-tools'
+    regexp: '^synology:/volume1/linux-tools'
     line: synology:/volume1/linux-tools /linux-tools nfs rw 0 2
+
+- name: Create /Movies
+  file:
+    path: /Movies
+    state: directory
+
+- name: Add /Movies Mount
+  lineinfile:
+    path: /etc/fstab
+    regexp: '^synology:/volume1/Movies'
+    line: synology:/volume1/Movies /mnt/Movies nfs rw 0 2
+
+- name: Create /TV-Shows
+  file:
+    path: /TV-Shows
+    state: directory
+
+- name: Add /Movies Mount
+  lineinfile:
+    path: /etc/fstab
+    regexp: '^synology:/volume1/TV-Shows'
+    line: synology:/volume1/TV-Shows /mnt/TV-Shows nfs rw 0 2
+
+- name: Create /TV-Shows1
+  file:
+    path: /TV-Shows1
+    state: directory
+
+- name: Add /Movies Mount
+  lineinfile:
+    path: /etc/fstab
+    regexp: '^synology:/volume1/TV-Shows1'
+    line: synology:/volume1/TV-Shows /mnt/TV-Shows nfs rw 0 2
+
+- name: Mounting all filesystems.
+  command: mount -a
