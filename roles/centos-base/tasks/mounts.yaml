@@ -12,7 +12,7 @@
 
 - name: Create /Movies
   file:
-    path: /Movies
+    path: /mnt/Movies
     state: directory
 
 - name: Add /Movies Mount
@@ -23,18 +23,18 @@
 
 - name: Create /TV-Shows
   file:
-    path: /TV-Shows
+    path: /mnt/TV-Shows
     state: directory
 
-- name: Add /Movies Mount
+- name: Add /mnt/Movies Mount
   lineinfile:
     path: /etc/fstab
     regexp: '^synology:/volume1/TV-Shows'
     line: synology:/volume1/TV-Shows /mnt/TV-Shows nfs rw 0 2
 
-- name: Create /TV-Shows1
+- name: Create /mnt/TV-Shows1
   file:
-    path: /TV-Shows1
+    path: /mnt/TV-Shows1
     state: directory
 
 - name: Add /TV-Shows1 Mount
