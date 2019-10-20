@@ -26,10 +26,10 @@
     path: /mnt/TV-Shows
     state: directory
 
-- name: Add /mnt/Movies Mount
+- name: Add /mnt/TV-Shows Mount
   lineinfile:
     path: /etc/fstab
-    regexp: '^synology:/volume1/TV-Shows'
+    regexp: '^synology:/volume1/TV-Shows /mnt/TV-Shows nfs rw 0 2'
     line: synology:/volume1/TV-Shows /mnt/TV-Shows nfs rw 0 2
 
 - name: Create /mnt/TV-Shows1
@@ -40,7 +40,7 @@
 - name: Add /TV-Shows1 Mount
   lineinfile:
     path: /etc/fstab
-    regexp: '^synology:/volume1/TV-Shows1'
+    regexp: '^synology:/volume1/TV-Shows1 /mnt/TV-Shows1 nfs rw 0 2'
     line: synology:/volume1/TV-Shows1 /mnt/TV-Shows1 nfs rw 0 2
 
 - name: Mounting all filesystems.
