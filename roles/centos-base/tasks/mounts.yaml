@@ -41,7 +41,7 @@
   lineinfile:
     path: /etc/fstab
     regexp: '^synology:/volume1/TV-Shows1'
-    line: synology:/volume1/TV-Shows1 /mnt/TV-Shows nfs rw 0 2
+    line: synology:/volume1/TV-Shows1 /mnt/TV-Shows1 nfs rw 0 2
 
 - name: Mounting all filesystems.
   command: mount -a
