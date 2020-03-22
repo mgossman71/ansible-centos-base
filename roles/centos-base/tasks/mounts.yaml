@@ -43,5 +43,16 @@
     regexp: '^synology:/volume1/TV-Shows1 /mnt/TV-Shows1 nfs rw 0 2'
     line: synology:/volume1/TV-Shows1 /mnt/TV-Shows1 nfs rw 0 2
 
+- name: Create /mnt/sabnzb
+  file:
+    path: /mnt/sabnzb
+    state: directory
+
+- name: Add /sabnzb Mount
+  lineinfile:
+    path: /etc/fstab
+    regexp: '^synology:/volume1/Movies'
+    line: synology:/volume1/sabnzb /mnt/sabnzb nfs rw 0 2
+
 - name: Mounting all filesystems.
   command: mount -a
