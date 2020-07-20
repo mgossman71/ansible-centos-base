@@ -13,15 +13,25 @@
 - name: Enable kubernetes yum repo
   command: yum-config-manager --enable kubernetes
 
+#- name: install kubelet kubeadm kubectl
+#  yum:
+#    name: "{{ packages }}"
+#    state: latest
+#  vars:
+#    packages:
+#    - kubelet-1.15.4-0.x86_64
+#    - kubeadm-1.15.4-0.x86_64
+#    - kubectl-1.15.4-0.x86_64
+
 - name: install kubelet kubeadm kubectl
   yum:
     name: "{{ packages }}"
-    state: latest
+    state: absent
   vars:
     packages:
-    - kubelet-1.15.4-0.x86_64
-    - kubeadm-1.15.4-0.x86_64
-    - kubectl-1.15.4-0.x86_64
+    - kubelet
+    - kubeadm
+    - kubectl
 
 - name: copy sysctl.conf updated file to node
   copy:
