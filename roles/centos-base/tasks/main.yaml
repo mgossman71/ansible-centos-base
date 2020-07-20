@@ -6,7 +6,7 @@
     line: SELINUX=disabled
 
 - name: Disable selinux on systems.
-  command: setenforce 0
+  command: /usr/sbin/setenforce 0
   ignore_errors: yes
 
 # - import_tasks: linux-tools-mount.yaml
