@@ -26,7 +26,7 @@
 - name: install kubelet kubeadm kubectl
   yum:
     name: "{{ packages }}"
-    state: absent
+    state: latest
   vars:
     packages:
     - kubelet
