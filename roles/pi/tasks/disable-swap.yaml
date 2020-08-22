@@ -1,0 +1,4 @@
+- name: Disable Swap
+  service:
+    name: dphys-swapfile.service
+    state: disable
