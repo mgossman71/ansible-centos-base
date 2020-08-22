@@ -1,0 +1,7 @@
+---
+- name: base pi setup
+  hosts: all
+  gather_facts: yes
+  roles:
+    - pi
+
