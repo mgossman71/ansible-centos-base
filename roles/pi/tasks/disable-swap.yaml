@@ -2,3 +2,4 @@
   service:
     name: dphys-swapfile.service
     state: stopped
+    enabled: no
