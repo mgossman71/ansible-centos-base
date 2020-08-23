@@ -1,3 +1,4 @@
+---
 - name: Download Docker setup
   get_url:
     url: https://get.docker.com
