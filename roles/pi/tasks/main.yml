@@ -4,3 +4,4 @@
 - import_tasks: disable-swap.yaml
 - import_tasks: mounts.yaml
 - import_tasks: docker.yaml
+- import_tasks: k8s-prep.yaml
