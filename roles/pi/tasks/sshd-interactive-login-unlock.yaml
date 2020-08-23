@@ -1,0 +1,26 @@
+---
+- name: allow PermitRootLogin
+  lineinfile:
+    path:  /etc/ssh/sshd_config
+    regexp: '^#PermitRootLogin '
+    line: PermitRootLogin yes
+    backup: yes
+
+# - name: allow ChallengeResponseAuthentication
+#   lineinfile:
+#     path:  /etc/ssh/sshd_config
+#     regexp: '^ChallengeResponseAuthentication no'
+#     line: ChallengeResponseAuthentication yes
+#     backup: yes
+
+# - name: allow UsePAM
+#   lineinfile:
+#     path:  /etc/ssh/sshd_config
+#     regexp: '^UsePAM no'
+#     line: UsePAM yes
+#     backup: yes
+
+- name: Restart sshd
+  service:
+    name: sshd
+    state: restarted
