@@ -1,4 +1,5 @@
 - import_tasks: keys.yaml
+- import_tasks: software.yaml 
 - import_tasks: sshd-interactive-login-unlock.yaml
 # - import_tasks: disable-swap-raspberry.yaml
 - import_tasks: mounts.yaml

@@ -1,0 +1,15 @@
+---
+- name: Base packages install
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - nfs-common
+
+# - name: Remove packages
+#   yum:
+#     name: "{{ packages }}"
+#     state:  absent
+#   vars:
+#     packages:
+#     - gcc
