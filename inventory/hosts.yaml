@@ -1,7 +1,6 @@
-# [all:vars]
-# ansible_connection=ssh
-# ansible_user=root
-# ansible_ssh_pass=hookin
+[all:vars]
+ansible_connection=ssh
+ansible_user=root
 
 [piservers]
 pi01
