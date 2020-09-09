@@ -1,0 +1,14 @@
+# [all:vars]
+# ansible_connection=ssh
+# ansible_user=root
+# ansible_ssh_pass=hookin
+
+[piservers]
+pi01
+pi02
+pi03
+
+[dbservers]
+one.example.com
+two.example.com
+three.example.com
