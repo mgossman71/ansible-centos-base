@@ -9,9 +9,7 @@ pi02
 pi03
 
 [dbservers]
-one.example.com
-two.example.com
-three.example.com
+data0
 
 [plexservers]
 plex
