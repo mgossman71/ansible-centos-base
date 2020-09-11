@@ -6,9 +6,13 @@ ansible_user=root
 pi01
 pi02
 pi03
+pi04
 
 [dbservers]
 data0
 
 [plexservers]
 plex
+
+[dnsnodes]
+dns1
