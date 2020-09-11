@@ -6,10 +6,13 @@
     owner: root
     group: root
     mode: '0640'
-- name: Unlock /etc/resolv.conf 
-  shell: "/usr/bin/chattr -i /etc/resolv.conf"
+- name: Unlock resolv.conf.
+  file:
+    path: /etc/resolv.conf
+    attr: -i
 - name: Update and lock /etc/resolv.conf 
   command: cat /etc/resolv.conf.good >/etc/resolv.conf
-- name: Lock /etc/resolv.conf 
-  shell: "/usr/bin/chattr +i /etc/resolv.conf"
-
+- name: Lock resolv.conf.
+  file:
+    path: /etc/resolv.conf
+    attr: +i
