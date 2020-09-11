@@ -1,0 +1,15 @@
+--- 
+- name: place prometheus.yml.
+  copy:
+    src: files/prometheus.yml
+    dest: /root/prometheus.yml
+    owner: root
+    group: root
+    mode: '0660'
+- name: place prometheus-container-run.sh.
+  copy:
+    src: files/prometheus-container-run.sh
+    dest: /root/prometheus-container-run.sh
+    owner: root
+    group: root
+    mode: '0700'
