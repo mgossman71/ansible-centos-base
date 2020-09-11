@@ -1,0 +1,21 @@
+--- 
+- name: place node_exporter binary.
+  copy:
+    src: files/node_exporter
+    dest: /usr/local/bin/node_exporter
+    owner: root
+    group: root
+    mode: '0755'
+- name: place nodeexporter.service binary.
+  copy:
+    src: files/nodeexporter.service 
+    dest: /lib/systemd/system/nodeexporter.service
+    owner: root
+    group: root
+    mode: '0644'
+- name: Enable nodeexporter.service
+  service:
+    name: nodeexporter.service
+    state: started
+    enabled: yes
+      
