@@ -6,15 +6,15 @@
     owner: root
     group: root
     mode: '0640'
-- name: Remove /etc/resolv.conf  (delete file)
-  file:
-    path: /etc/resolv.conf 
-    state: absent
 - name: Unlock resolv.conf.
   file:
     path: /etc/resolv.conf
     attr: -i
-- name: Update and lock /etc/resolv.conf 
+- name: Remove /etc/resolv.conf  (delete file)
+  file:
+    path: /etc/resolv.conf 
+    state: absent
+- name: Update /etc/resolv.conf 
   command: cat /etc/resolv.conf.good >/etc/resolv.conf
 - name: Lock resolv.conf.
   file:
