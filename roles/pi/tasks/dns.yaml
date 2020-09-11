@@ -14,10 +14,13 @@
   file:
     path: /etc/resolv.conf 
     state: absent
-- name: Touch /etc/resolv.conf  (delete file)
-  file:
-    path: /etc/resolv.conf 
-    state: touch
+- name: place resolv.conf.good.
+  copy:
+    src: files/resolv.conf.good
+    dest: /etc/resolv.conf
+    owner: root
+    group: root
+    mode: '0640'
 - name: Update /etc/resolv.conf 
   command: cat /etc/resolv.conf.good >/etc/resolv.conf
 - name: Lock resolv.conf.
