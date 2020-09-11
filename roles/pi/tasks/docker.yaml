@@ -6,3 +6,4 @@
     mode: '0770'
 - name: Install Docker
   shell: /tmp/get-docker.sh 
+  ignore_errors: yes
