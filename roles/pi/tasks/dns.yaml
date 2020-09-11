@@ -6,6 +6,10 @@
     owner: root
     group: root
     mode: '0640'
+- name: Remove /etc/resolv.conf  (delete file)
+  file:
+    path: /etc/resolv.conf 
+    state: absent
 - name: Unlock resolv.conf.
   file:
     path: /etc/resolv.conf
