@@ -21,8 +21,6 @@
     owner: root
     group: root
     mode: '0640'
-- name: Update /etc/resolv.conf 
-  command: cat /etc/resolv.conf.good >/etc/resolv.conf
 - name: Lock resolv.conf.
   file:
     path: /etc/resolv.conf
