@@ -5,7 +5,7 @@
     dest: /root/prometheus.yml
     owner: root
     group: root
-    mode: '0660'
+    mode: '0666'
 - name: place prometheus-container-run.sh.
   copy:
     src: files/prometheus-container-run.sh
