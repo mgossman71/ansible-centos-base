@@ -16,3 +16,9 @@ plex
 
 [dnsnodes]
 dns1
+
+[netns]
+netns0
+netns1
+netns2
+netns3
