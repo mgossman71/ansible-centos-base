@@ -1,26 +1,26 @@
 ---
-# - name: Replace cmdline.txt
-#   copy:
-#     src: files/cmdline.txt
-#     dest: /boot/cmdline.txt
-#     owner: root
-#     group: root
-#     mode: '0755'
+ - name: Replace cmdline.txt
+   copy:
+     src: files/cmdline.txt
+     dest: /boot/cmdline.txt
+     owner: root
+     group: root
+     mode: '0755'
 
 # - name: Add the packages.cloud.google.com atp key
 #   command: curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
-# - name: Add the Kubernetes repo
-#   copy:
-#     src: files/kubernetes.list
-#     dest: /etc/apt/sources.list.d/kubernetes.list
-#     owner: root
-#     group: root
-#     mode: '0644'
+ - name: Add the Kubernetes repo
+   copy:
+     src: files/kubernetes.list
+     dest: /etc/apt/sources.list.d/kubernetes.list
+     owner: root
+     group: root
+     mode: '0644'
 
-# - name: install kubelet, kubeadm, and kubectl
-#   apt:
-#     pkg:
-#     - kubelet
-#     - kubeadm
-#     - kubectl
+ - name: install kubelet, kubeadm, and kubectl
+   apt:
+     pkg:
+     - kubelet
+     - kubeadm
+     - kubectl

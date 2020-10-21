@@ -5,7 +5,7 @@
 - import_tasks: sshd-interactive-login-unlock.yaml
 # - import_tasks: disable-swap-raspberry.yaml
 - import_tasks: mounts.yaml
-- import_tasks: docker.yaml
+#- import_tasks: docker.yaml
 - import_tasks: k8s-prep.yaml
 - import_tasks: patch.yaml
 - import_tasks: prometheus.yaml 
