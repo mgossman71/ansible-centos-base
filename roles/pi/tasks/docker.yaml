@@ -1,5 +1,5 @@
 ---
-- name: Base packages install
+- name: Docker.io install
   yum:
     name: "{{ packages }}"
   vars:
