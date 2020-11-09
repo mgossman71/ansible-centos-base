@@ -2,6 +2,9 @@
 ansible_connection=ssh
 ansible_user=root
 
+[misc]
+testbox
+
 [piservers]
 pi01
 pi02
