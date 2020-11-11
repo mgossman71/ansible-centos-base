@@ -2,6 +2,11 @@
 ansible_connection=ssh
 ansible_user=root
 
+[swarm]
+swarm0
+swarm1
+swarm2
+
 [misc]
 testbox
 
