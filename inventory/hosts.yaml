@@ -2,6 +2,10 @@
 ansible_connection=ssh
 ansible_user=root
 
+[jump]
+jump0
+jump1
+
 [registry]
 registry0
 
@@ -43,3 +47,12 @@ k8s3
 k8s4
 k8s5
 k8s6
+
+[k8s-workers]
+k8s1
+k8s2
+k8s3
+k8s4
+k8s5
+k8s6
+
