@@ -13,9 +13,9 @@ jump1
 registry0
 
 [swarm]
-swarm0
 swarm1
 swarm2
+swarm3
 
 [misc]
 testbox
