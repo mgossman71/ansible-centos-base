@@ -2,6 +2,9 @@
 ansible_connection=ssh
 ansible_user=root
 
+[crio]
+crio-0
+
 [drone]
 drone0
 
