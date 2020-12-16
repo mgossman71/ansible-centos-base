@@ -50,8 +50,10 @@ netns3
 [k8s-work-bh]
 drtlx1003
 
-[k8s-work]
+[k8s-master]
 drtlx1004
+
+[k8s-work]
 drtlx1005
 drtlx1006
 drtlx1007
