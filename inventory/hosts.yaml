@@ -47,6 +47,9 @@ netns1
 netns2
 netns3
 
+[k8s-work-bh]
+drtlx1003
+
 [k8s-work]
 drtlx1004
 drtlx1005
