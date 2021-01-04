@@ -22,7 +22,7 @@ func main() {
 
 	ansiblePlaybookOptions := &ansibler.AnsiblePlaybookOptions{
 		Inventory: "inventory/hosts.yaml",
-		limit: "k8s"
+		limit:     "k8s",
 	}
 
 	playbook := &ansibler.AnsiblePlaybookCmd{
