@@ -3,6 +3,9 @@ ansible_connection=ssh
 ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
+[awx]
+awx0
+
 [crio]
 crio-0
 crio-1
@@ -25,6 +28,7 @@ swarm3
 
 [misc]
 testbox
+k8s00
 
 [piservers]
 pi01
