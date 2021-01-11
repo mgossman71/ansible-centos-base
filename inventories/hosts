@@ -3,6 +3,14 @@ ansible_connection=ssh
 ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
+[haproxy]
+haproxy00
+haproxy01
+
+[xoa]
+xoa0
+xoa1
+
 [awx]
 awx0
 
@@ -16,6 +24,7 @@ jump1
 [misc]
 testbox
 k8s00
+k8s01
 
 [piservers]
 pi01
@@ -23,6 +32,7 @@ pi02
 pi03
 
 [dbservers]
+tel0
 tel1
 
 [plexservers]
