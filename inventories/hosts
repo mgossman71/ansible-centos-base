@@ -6,6 +6,7 @@ ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 [haproxy]
 haproxy00
 haproxy01
+lb0
 
 [xoa]
 xoa0
