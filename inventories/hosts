@@ -39,23 +39,6 @@ tel1
 [plexservers]
 plex
 
-[k8s-work-bh]
-drtlx1003
-
-[k8s-master]
-drtlx1004
-
-[k8s-work]
-drtlx1005
-drtlx1006
-drtlx1007
-drtlx1008
-drtlx1009
-drtlx1010
-drtlx1011
-drtlx1012
-
-
 [k8s]
 k8s0
 k8s1
