@@ -1,0 +1,27 @@
+---
+- name: Base packages install
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - open-vm-tools
+    - wget
+    - curl
+    - unzip
+    - zip
+    - bind-utils
+    - lsof
+    - nfs-utils
+    - yum-utils
+    - device-mapper-persistent-data
+    - lvm2
+    - nmap
+    - etcd
+
+- name: Remove packages
+  yum:
+    name: "{{ packages }}"
+    state:  absent
+  vars:
+    packages:
+    - gcc
