@@ -1,6 +1,6 @@
 ---
 - name: Docker.io install
-  yum:
+  apt:
     name: "{{ packages }}"
   vars:
     packages:

@@ -1,10 +1,11 @@
 ---
 - name: Base packages install
-  yum:
+  apt:
     name: "{{ packages }}"
   vars:
     packages:
     - nfs-common
+    - git
 
 # - name: Remove packages
 #   yum:
