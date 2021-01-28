@@ -18,6 +18,11 @@
 #- name: Add the packages.cloud.google.com atp key
 #  command: "curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -"
 
+- name: Add an Apt signing key, uses whichever key is at the URL
+  ansible.builtin.apt_key:
+    url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    state: present
+
 - name: Add the Kubernetes repo
   copy:
     src: files/kubernetes.list
