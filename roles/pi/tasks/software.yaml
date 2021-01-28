@@ -6,8 +6,10 @@
     packages:
     - nfs-common
     - git
-    - ansible
-    - molecule
+    - curl
+    - apt-transport-https
+#    - ansible
+#    - molecule
     - python3-pip
     - libssl-dev
 

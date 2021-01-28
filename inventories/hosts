@@ -1,7 +1,10 @@
 [all:vars]
 ansible_connection=ssh
-ansible_user=root
+#ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+[ans-nodes]
+ansible0
+ansible1
 
 [haproxy]
 haproxy00

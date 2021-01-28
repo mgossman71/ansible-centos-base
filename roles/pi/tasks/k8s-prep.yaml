@@ -1,22 +1,22 @@
 ---
-- name: Replace /boot/cmdline.txt
-  copy:
-    src: files/cmdline.txt
-    dest: /boot/cmdline.txt
-    owner: root
-    group: root
-    mode: '0755'
+#- name: Replace /boot/cmdline.txt
+#  copy:
+#    src: files/cmdline.txt
+#    dest: /boot/cmdline.txt
+#    owner: root
+#    group: root
+#    mode: '0755'
 
-- name: Replace /boot/firmware/nobtcmd.txt
-  copy:
-    src: files/nobtcmd.txt
-    dest: /boot/firmware/nobtcmd.txt
-    owner: root
-    group: root
-    mode: '0755'
+#- name: Replace /boot/firmware/nobtcmd.txt
+#  copy:
+#    src: files/nobtcmd.txt
+#    dest: /boot/firmware/nobtcmd.txt
+#    owner: root
+#    group: root
+#    mode: '0755'
 
-#  - name: Add the packages.cloud.google.com atp key
-#    command: curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+#- name: Add the packages.cloud.google.com atp key
+#  command: "curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -"
 
 - name: Add the Kubernetes repo
   copy:
