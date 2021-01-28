@@ -6,6 +6,10 @@
     packages:
     - nfs-common
     - git
+    - ansible
+    - molecule
+    - python3-pip
+    - libssl-dev
 
 # - name: Remove packages
 #   yum:
