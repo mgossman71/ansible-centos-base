@@ -37,3 +37,4 @@
     - kubelet
     - kubeadm
     - kubectl
+    update_cache: yes
