@@ -6,9 +6,13 @@ ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ansible0
 ansible1
 
+[ubk]
+ubk0
+ubk1
+ubk2
+ubk3
+
 [haproxy]
-haproxy00
-haproxy01
 lb0
 
 [xoa]
