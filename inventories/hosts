@@ -1,6 +1,6 @@
 [all:vars]
 ansible_connection=ssh
-#ansible_user=root
+ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 [ans-nodes]
 ansible0
@@ -8,6 +8,7 @@ ansible1
 
 [k3s]
 k3s0
+k3s1
 
 [ubk]
 ubk0
