@@ -2,9 +2,16 @@
 ansible_connection=ssh
 ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+[kafka]
+kafka0
+
 [ans-nodes]
 ansible0
 ansible1
+
+[av]
+sonarr0
 
 [kc]
 kc0
