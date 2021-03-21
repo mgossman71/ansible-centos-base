@@ -58,8 +58,8 @@ pi03
 tel0
 tel1
 
-[plexservers]
-plex
+[plex]
+plex0
 
 [k8s]
 k8s0
