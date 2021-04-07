@@ -3,6 +3,12 @@ ansible_connection=ssh
 ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
+[nomad]
+nomad0
+nomad1
+nomad2
+nomad3
+
 [kafka]
 kafka0
 
@@ -12,6 +18,9 @@ ansible1
 
 [av]
 sonarr0
+
+[av-ubuntu]
+sonarr1
 
 [kc]
 kc0
