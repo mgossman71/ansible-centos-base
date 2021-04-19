@@ -1,12 +1,14 @@
 [all:vars]
 ansible_connection=ssh
-ansible_user=root
+#ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
-[nomad]
+[nomad-m]
 nomad0
 nomad1
 nomad2
+
+[nomad-w]
 nomad3
 
 [kafka]
