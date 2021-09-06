@@ -61,9 +61,15 @@ k8s00
 k8s01
 
 [piservers]
-pi01
-pi02
-pi03
+ubuntu
+pi8a
+pi8b
+
+[piservers2]
+pi4a
+pi4b
+pi4c
+pi4d
 
 [dbservers]
 tel0
