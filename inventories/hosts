@@ -3,40 +3,9 @@ ansible_connection=ssh
 #ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
-[nomad-m]
-nomad0
-nomad1
-nomad2
-
-[nomad-w]
-nomad3
-
-[kafka]
-kafka0
-
 [ans-nodes]
 ansible0
 ansible1
-
-[av]
-sonarr0
-
-[av-ubuntu]
-sonarr1
-
-[kc]
-kc0
-kc1
-
-[k3s]
-k3s0
-k3s1
-
-[ubk]
-ubk0
-ubk1
-ubk2
-ubk3
 
 [haproxy]
 lb0
@@ -48,17 +17,9 @@ xoa1
 [awx]
 awx0
 
-[drone]
-drone0
-
 [jump]
 jump0
 jump1
-
-[misc]
-testbox
-k8s00
-k8s01
 
 [piservers]
 ubuntu
@@ -79,19 +40,7 @@ tel1
 plex0
 
 [k8s]
-k8s0
-k8s1
-k8s2
-k8s3
-k8s4
-k8s5
-k8s6
-
-[k8s-workers]
-k8s1
-k8s2
-k8s3
-k8s4
-k8s5
-k8s6
-
+k0
+k1
+k2
+k3
