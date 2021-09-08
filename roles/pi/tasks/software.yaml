@@ -12,6 +12,7 @@
 #    - molecule
     - python3-pip
     - libssl-dev
+    - cockpit
 
 # - name: Remove packages
 #   yum:
@@ -20,3 +21,9 @@
 #   vars:
 #     packages:
 #     - gcc
+
+- name: Enable cockpit
+  service:
+    name: cockpit
+    state: started
+    enabled: yes

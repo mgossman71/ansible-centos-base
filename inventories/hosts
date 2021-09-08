@@ -21,12 +21,11 @@ awx0
 jump0
 jump1
 
-[piservers]
-ubuntu
+[pi8]
 pi8a
 pi8b
 
-[piservers2]
+[pi4]
 pi4a
 pi4b
 pi4c
