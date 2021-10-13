@@ -31,6 +31,11 @@ pi4b
 pi4c
 pi4d
 
+[pi4k8s]
+pi4b
+pi4c
+pi4d
+
 [dbservers]
 tel0
 tel1
@@ -38,8 +43,3 @@ tel1
 [plex]
 plex0
 
-[k8s]
-k0
-k1
-k2
-k3
