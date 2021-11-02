@@ -3,6 +3,11 @@ ansible_connection=ssh
 #ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
+[utest]
+utest1
+utest2
+utest3
+
 [ans-nodes]
 ansible0
 ansible1
