@@ -3,6 +3,12 @@ ansible_connection=ssh
 #ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
+[k-servers]
+k0
+k1
+k2
+k3
+
 [utest]
 utest1
 utest2
@@ -47,4 +53,3 @@ tel1
 
 [plex]
 plex0
-
