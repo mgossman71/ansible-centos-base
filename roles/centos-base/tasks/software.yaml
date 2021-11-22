@@ -9,10 +9,10 @@
     - curl
     - unzip
     - zip
-    - bind-utils
     - lsof
     - nfs-utils
     - yum-utils
+    - bind-utils
     - device-mapper-persistent-data
     - lvm2
     - nmap
