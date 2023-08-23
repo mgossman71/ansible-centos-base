@@ -3,55 +3,12 @@ ansible_connection=ssh
 #ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
-[k-servers]
-k0
-k1
-k2
-k3
-
 [utest]
 utest1
 utest2
 utest3
 
-[ans-nodes]
-ansible0
-ansible1
-
-[haproxy]
-lb0
-
-[xoa]
-xoa0
-xoa1
-
 [awx]
 awx0
+awx1
 
-[jump]
-jump0
-jump1
-
-[pi8]
-pi8a
-pi8b
-
-[pi4]
-pi4a
-pi4b
-pi4c
-pi4d
-
-[pi4k8s]
-pi4b
-pi4c
-pi4d
-
-[dbservers]
-tel0
-tel1
-
-[plex]
-plex0
-plex1
-plex2
