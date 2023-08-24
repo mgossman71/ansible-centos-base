@@ -8,4 +8,4 @@
 #- import_tasks: k8s-prep.yaml
 - import_tasks: patch.yaml
 #- import_tasks: prometheus.yaml
-- import_tasks: dns.yaml
+#- import_tasks: dns.yaml
