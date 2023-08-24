@@ -3,12 +3,6 @@ ansible_connection=ssh
 ansible_user=root
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
-[utest]
-utest1
-utest2
-utest3
-
 [awx]
 awx0
-awx1.gozz.domain
-10.0.0.201
+awx1
